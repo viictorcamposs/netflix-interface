@@ -1,0 +1,72 @@
+{% extends './layout.njk' %}
+
+{% block head %}
+    <link rel="stylesheet" href="account/home.css">
+    <title>Netflix</title>
+{% endblock %}
+
+{% block content %}
+
+    <main>
+        <div class="header">
+            <div class="header-content">
+                <div class="container">
+                    <img src="https://occ-0-564-1380.1.nflxso.net/dnm/api/v6/tx1O544a9T7n8Z_G12qaboulQQE/AAAABa5q8YasY44aHwwgNLC606dxeAyY01bqyXE6p_wSCKXVytGBjoKDOlJS8krf6LxfLx8OSW9Kd5hnnIlqajIKvR7H0b9jxyCU_eKBp5sfjE5IJHREik3J7iSwtQKdJ02ozmbw-jR-fWsU7xJZdhVEVQReLEdq0MVZfRgwx0QY3yU.png?r=a57" alt="O Código Bill Gates">
+                    <div class="type-info-video">
+                        <p>
+                            <span>99% relevante</span>
+                            2019
+                            <span>14</span>
+                            Minissérie
+                        </p>
+                    </div>
+                    <div class="subtitle-container">
+                        <div class="subtitle">
+                            <p>Bill Gates fala sobre a missão de vida ou morte para melhorar as condições de saneamento no mundo em desenvolvimento. E suas irmãs relembram a infância com ele.</p>
+                        </div>
+                        <div class="subtitle-buttons">
+                            <button>
+                                <i class="fas fa-play"></i>
+                                Assistir
+                            </button>
+                            <button>
+                                <i class="material-icons">add</i>
+                                Minha lista
+                            </button>
+                        </div>
+                        <div class="movie-cast">
+                            <p>
+                                Criação:
+                                <span>Davis Guggenheim</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-background-image"></div>
+            </div>
+            <div class="header-bottom-options">
+                <a class="selected">VISÃO GERAL</a>
+                <a>EPISÓDIOS</a>
+                <a>TRAILERS E MAIS</a>
+                <a>TÍTULOS SEMELHANTES</a>
+                <a>DETALHES</a>
+            </div>
+        </div>
+
+        <div class="movie-list-carousel">
+            <div class="title-section">
+                <h1>Minha lista</h1>
+            </div>
+            <div class="container">
+                <div class="carousel">
+                    <ul>
+                        {% for movie in movieList %}
+                            <li><img src="{{ movie.image }}" alt="{{ movie.title }}"></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+{% endblock %}

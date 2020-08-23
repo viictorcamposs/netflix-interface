@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico" type="image/x-icon">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="/layout.css">
+        
+        {% block head %}
+            <title>Netflix</title>
+        {% endblock %}
+    </head>
+    <body>
+        {% include 'parts/header.njk' %}
+        
+        {% block content %}{% endblock %}
+
+        {% include 'parts/footer.njk' %}
+
+        <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+    </body>
+</html>
