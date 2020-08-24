@@ -2,9 +2,9 @@ const Movies = require ('../models/Home')
 
 module.exports = {
     async all ( req, res ) {
-        let movies = await Movies.allMovies ()
-        const movieList = movies.rows
+        let results = await Movies.all ()
+        const movies = results.rows
         
-        return res.render ('account/home.njk', { movieList })
+        return res.render ('account/home.njk', { movies })
     }
 }

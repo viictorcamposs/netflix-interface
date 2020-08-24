@@ -5,5 +5,5 @@ module.exports = new Pool ({
     password: 'Victor@oliveira98',
     host: 'localhost',
     port: 5432,
-    database: 'netflix-interface'
+    database: 'netflixdb'
 })
