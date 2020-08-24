@@ -136,3 +136,31 @@
     color: white;
     border-bottom: 4px solid var(--red-pattern-color);
 }
+
+
+.movie-list-carousel {
+    padding: 50px 0 12px 54px;
+    background-color: var(--black-pattern-color);
+    overflow-x: auto;    
+}
+.movie-list-carousel .my-list {
+    width: 100vw;
+}
+.movie-list-carousel .title-section h1 {
+    color: #d3d3d3;
+    font-size: 19px;
+    margin-bottom: 14px;
+}
+.movie-list-carousel .container .carousel ul {
+    display: flex;
+    width: 100vw;
+}
+.movie-list-carousel .container .carousel ul li {
+    list-style: none;
+    margin-right: 4px;
+}
+.movie-list-carousel .container .carousel ul li img {
+    width: 230px;
+    height: 130px;
+    cursor: pointer;
+}

@@ -54,16 +54,18 @@
         </div>
 
         <div class="movie-list-carousel">
-            <div class="title-section">
-                <h1>Minha lista</h1>
-            </div>
-            <div class="container">
-                <div class="carousel">
-                    <ul>
-                        {% for movie in movieList %}
-                            <li><img src="{{ movie.image }}" alt="{{ movie.title }}"></li>
-                        {% endfor %}
-                    </ul>
+            <div class="my-list">
+                <div class="title-section">
+                    <h1>Minha lista</h1>
+                </div>
+                <div class="container">
+                    <div class="carousel">
+                        <ul id="my-list-movies">
+                            {% for movie in movies %}
+                                <li><img src="{{ movie.image }}" alt="{{ movie.title }}"></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
